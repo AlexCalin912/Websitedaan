@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LevelUP Hardware - Producten</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+     <link rel="icon" type="image/png" href="logo.png">
+</head>
+
+<body>  
+     <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">🌙</button>
+    <div class="content-box">
+        <div class="gradient-bar"></div>
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="LevelUp Hardware Logo">
+        </a>
+        <div class="nav-buttons">
+            <a href="index.html">Home</a>
+            <a href="over-ons.html">Over ons</a>
+            <a href="producten.html">Producten</a>
+        </div>
+    </div>
+
+    <div class="page-hero">
+        <h1>Producten</h1>
+        <h2>Voor de Serieuze Gamer</h2>
+    </div>
+
+    <div class="filter-buttons">
+        <button class="filter-btn active" onclick="filterCategory('all', this)">Alles</button>
+        <button class="filter-btn" onclick="filterCategory('systemen', this)">Systemen</button>
+        <button class="filter-btn" onclick="filterCategory('monitoren', this)">Monitoren</button>
+        <button class="filter-btn" onclick="filterCategory('peripherals', this)">Peripherals</button>
+        <button class="filter-btn" onclick="filterCategory('componenten', this)">Componenten</button>
+        <button class="filter-btn" onclick="filterCategory('accessoires', this)">Accessoires</button>
+    </div>
+
+    <h2 class="category-title" data-category="systemen">Desktops & Laptops (Systemen)</h2>
+    <div class="producten" data-category="systemen">
+        <div class="product-card">
+            <img src="img/laptop.png" alt="Gaming Laptop X1">
+            <div class="producten-info">
+                <h3><a href="javascript:void(0)" class="producten-name" onclick="openModal({name: 'Gaming Laptop X1', specs: 'Intel i7, RTX 4060, 16GB RAM, 1TB SSD', price: '€1499'})">Gaming Laptop X1</a></h3>
+                <div class="price">€1499</div>
+                <p>Krachtige laptop met de nieuwste GPU voor ultieme gaming prestaties.</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="img/computer.png" alt="Custom Gaming PC">
+            <div class="producten-info">
+                <h3><a href="javascript:void(0)" class="producten-name" onclick="openModal({name: 'Custom Gaming PC', specs: 'Ryzen 9, RTX 4070, 32GB RAM, 2TB SSD', price: '€1999'})">Custom Gaming PC</a></h3>
+                <div class="price">€1999</div>
+                <p>Op maat gemaakte desktop met topkwaliteit componenten voor maximale snelheid.</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="img/gamingpc.png" alt="High-end Gaming Desktop">
+            <div class="producten-info">
+                <h3><a href="javascript:void(0)" class="producten-name" onclick="openModal({name: 'High-end Gaming Desktop', specs: 'Intel i9, RTX 4080, 32GB RAM, 2TB SSD', price: '€2499'})">High-end Gaming Desktop</a></h3>
+                <div class="price">€2499</div>
+                <p>Een opvallende pc met glazen zijpaneel en veel RGB-verlichting.</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="img/elaptop.png" alt="Compacte Esports Laptop">
+            <div class="producten-info">
+                <h3><a href="javascript:void(0)" class="producten-name" onclick="openModal({name: 'Compacte Esports Laptop', specs: 'Intel i5, RTX 4060, 16GB RAM, 500GB SSD', price: '€1299'})">Compacte Esports Laptop</a></h3>
+                <div class="price">€1299</div>
+                <p>Een dunne, maar krachtige laptop voor onderweg.</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="img/streamingworkstation.png" alt="Streaming Workstation">
+            <div class="producten-info">
+                <h3><a href="javascript:void(0)" class="producten-name" onclick="openModal({name: 'Streaming Workstation', specs: 'Intel i9, RTX 5070, 32GB RAM, 2TB SSD', price: '€1999'})">Streaming Workstation</a></h3>
+                <div class="price">€1999</div>
+                <p>Een zware desktop gericht op content creators.</p>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="category-title" data-category="monitoren">Monitoren</h2>
+    <div class="producten" data-category="monitoren">
+        <div class="product-card">
+            <img src="img/ultrawide.png" alt="Ultrawide Curved Gaming Monitor">
+            <div class="producten-info">
+                <h3><a href="javascript:void(0)" class="producten-name" onclick="openModal({name: 'Ultrawide Curved Gaming Monitor', specs: '34-inch, 1440p, 144Hz, FreeSync', price: '€999'})">Ultrawide Curved Gaming Monitor</a></h3>
+                <div class="price">€999</div>
+                <p>Voor de ultieme race- en flight-simulators.</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="img/4kOLED.png" alt="4K OLED Monitor">
+            <div class="producten-info">
+                <h3><a href="javascript:void(0)" class="producten-name" onclick="openModal({name: '4K OLED Monitor', specs: '4K UHD, 120Hz, HDR10, FreeSync', price: '€899'})">4K OLED Monitor</a></h3>
+                <div class="price">€899</div>
+                <p>Gericht op haarscherp beeld met diepe kleuren voor grafisch werk.</p>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="category-title" data-category="peripherals">Randapparatuur (Peripherals)</h2>
+    <div class="producten" data-category="peripherals">
+        <div class="product-card">
+            <img src="img/headset.png" alt="Pro Gaming Headset">
+            <div class="producten-info">
+                <h3><a href="javascript:void(0)" class="producten-name" onclick="openModal({name: 'Pro Gaming Headset', specs: 'Surround sound, noise-cancelling mic, verstelbare hoofdband', price: '€199'})">Pro Gaming Headset</a></h3>
+                <div class="price">€199</div>
+                <p>Comfortabele headset met surround sound voor een meeslepende game-ervaring.</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="img/Kboard.png" alt="Mechanisch Toetsenbord (60% formaat)">
+            <div class="producten-info">
+                <h3><a href="javascript:void(0)" class="producten-name" onclick="openModal({name: 'Mechanisch Toetsenbord (60% formaat)', specs: 'RGB-licht, O-Ring, 10000 acties', price: '€199'})">Mechanisch Toetsenbord (60% formaat)</a></h3>
+                <div class="price">€199</div>
+                <p>Een compact toetsenbord met opvallende keycaps en verlichting.</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="img/mouse.png" alt="Draadloze Lichtgewicht Gaming Muis">
+            <div class="producten-info">
+                <h3><a href="javascript:void(0)" class="producten-name" onclick="openModal({name: 'Draadloze Lichtgewicht Gaming Muis', specs: 'Wireless, Light-weight, 10000 DPI', price: '€79'})">Draadloze Lichtgewicht Gaming Muis</a></h3>
+                <div class="price">€79</div>
+                <p>Ontworpen voor snelle shooters.</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="img/gheadset.png" alt="High-Res Gaming Headset">
+            <div class="producten-info">
+                <h3><a href="javascript:void(0)" class="producten-name" onclick="openModal({name: 'High-Res Gaming Headset', specs: 'High-resolution audio, Noise cancellation, Wireless', price: '€199'})">High-Res Gaming Headset</a></h3>
+                <div class="price">€199</div>
+                <p>Een draadloze headset met noise-cancelling en een afneembare microfoon.</p>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="category-title" data-category="componenten">Interne Componenten</h2>
+    <div class="producten" data-category="componenten">
+        <div class="product-card">
+            <img src="img/5070.png" alt="Videokaart 5070 (GPU)">
+            <div class="producten-info">
+                <h3><a href="javascript:void(0)" class="producten-name" onclick="openModal({name: 'Videokaart 5070 (GPU)', specs: 'High-performance graphics, 12GB VRAM, DirectX 12', price: '€999'})">Videokaart (GPU)</a></h3>
+                <div class="price">€999</div>
+                <p>Een massieve grafische kaart.</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="img/watercooler.png" alt="Waterkoeler (AIO)">
+            <div class="producten-info">
+                <h3><a href="javascript:void(0)" class="producten-name" onclick="openModal({name: 'Waterkoeler (AIO)', specs: 'All-in-one water cooling solution, 240mm radiator, 3 fans', price: '€149'})">Waterkoeler (AIO)</a></h3>
+                <div class="price">€149</div>
+                <p>Een all-in-one waterkoeler met 240mm radiator en 3 fans.</p>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="category-title" data-category="accessoires">Accessoires</h2>
+    <div class="producten" data-category="accessoires">
+        <div class="product-card">
+            <img src="img/mpad.png" alt="XXL RGB Muismat">
+            <div class="producten-info">
+                <h3><a href="javascript:void(0)" class="producten-name" onclick="openModal({name: 'XXL RGB Muismat', specs: 'Large RGB mouse mat, 1200x600mm, Non-slip base', price: '€29.99'})">XXL RGB Muismat</a></h3>
+                <div class="price">€29.99</div>
+                <p>Een bureaumat die onder zowel de muis als het toetsenbord past.</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="img/echair.png" alt="Ergonomische Gamestoel">
+            <div class="producten-info">
+                <h3><a href="javascript:void(0)" class="producten-name" onclick="openModal({name: 'Ergonomische Gamestoel', specs: 'Ergonomische ontwerp, Aanpasbare ondersteuning, Hoogwaardige materialen', price: '€299'})">Ergonomische Gamestoel</a></h3>
+                <div class="price">€299</div>
+                <p>Een stoere, comfortabele stoel voor lange sessies.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 LevelUp Hardware. Alle rechten voorbehouden.</p>
+    </footer>
+
+    <div id="product-modal" class="modal-overlay">
+        <div class="modal-box">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <h3 id="modal-title"></h3>
+            <p id="modal-specs"></p>
+            <div class="modal-price" id="modal-price"></div>
+            <button class="add-to-cart">Toevoegen aan winkelwagen</button>
+        </div>
+    </div>
+
+    <script>
+        function openModal(product) {
+            document.getElementById('modal-title').textContent = product.name;
+            document.getElementById('modal-specs').textContent = product.specs;
+            document.getElementById('modal-price').textContent = product.price;
+            document.getElementById('product-modal').classList.add('active');
+        }
+        function closeModal() {
+            document.getElementById('product-modal').classList.remove('active');
+        }
+        function filterCategory(category, btn) {
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            document.querySelectorAll('[data-category]').forEach(el => {
+                if (category === 'all' || el.dataset.category === category) {
+                    el.style.display = '';
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
